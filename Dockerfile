@@ -12,4 +12,4 @@ RUN cd smart-home-provider/frontend && \
     cd .. && \
     npm install
 
-CMD ["node cloud/smart-home-provider-cloud.js smart-home="http://leshan.ml"]
+ENTRYPOINT ["/usr/local/bin/node", "/src/smart-home-provider/cloud/smart-home-provider-cloud.js"]
